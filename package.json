@@ -1,6 +1,6 @@
 {
-  "name": "trae-discord-rich-presence",
-  "displayName": "TRAE Discord Rich Presence",
+  "name": "trae-discord-presence",
+  "displayName": "TRAE Discord Presence",
   "description": "Show on Discord that you're working in TRAE IDE, with rich presence and real-time status updates",
   "version": "1.0.0",
   "publisher": "HighMark-IT",
@@ -13,18 +13,10 @@
   ],
   "keywords": [
     "discord",
-    "discord rpc",
     "rich presence",
-    "presence",
+    "rpc",
     "status",
-    "vscode",
-    "visual studio code",
-    "trae",
-    "trae ide",
-    "ide",
-    "productivity",
-    "coding",
-    "editor"
+    "trae"
   ],
   "icon": "img/logo.png",
   "galleryBanner": {
