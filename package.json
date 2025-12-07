@@ -1,9 +1,10 @@
 {
   "name": "trae-discord-rich-presence",
   "displayName": "TRAE Discord Rich Presence",
-  "description": "Show on Discord that you're working in TRAE instead of VS Code",
+  "description": "Show on Discord that you're working in TRAE IDE, with rich presence and real-time status updates",
   "version": "1.0.0",
-  "publisher": "trae",
+  "publisher": "HighMark-IT",
+  "author": "HighMark-IT",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -12,11 +13,24 @@
   ],
   "keywords": [
     "discord",
+    "discord rpc",
     "rich presence",
+    "presence",
+    "status",
+    "vscode",
+    "visual studio code",
     "trae",
-    "status"
+    "trae ide",
+    "ide",
+    "productivity",
+    "coding",
+    "editor"
   ],
   "icon": "img/logo.png",
+  "galleryBanner": {
+    "color": "#5865F2",
+    "theme": "dark"
+  },
   "activationEvents": [
     "onStartupFinished",
     "onCommand:traeDiscordPresence.toggle"
@@ -88,7 +102,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trae/trae-discord-rich-presence.git"
+    "url": "https://github.com/HighMark-31/TRAE-Discord-Rich-Presence.git"
+  },
+  "homepage": "https://github.com/HighMark-31/TRAE-Discord-Rich-Presence",
+  "bugs": {
+    "url": "https://github.com/HighMark-31/TRAE-Discord-Rich-Presence/issues"
   },
   "license": "MIT"
 }
