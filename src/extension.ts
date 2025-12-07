@@ -247,7 +247,7 @@ function buildBaseActivity(): any {
         instance: false
     };
     activity.buttons = [
-        { label: 'I need it', url: 'https://github.com/trae/trae-discord-rich-presence' },
+        { label: 'I need it', url: 'https://github.com/HighMark-31/TRAE-Discord-Rich-Presence' },
         { label: 'Open TRAE', url: 'https://trae.ai' }
     ];
     if (config.get('showElapsedTime')) {
@@ -311,3 +311,4 @@ function stopPromoScheduler() {
     if (promoRevertTimeout) { clearTimeout(promoRevertTimeout); promoRevertTimeout = null; }
     inPromo = false;
 }
+
