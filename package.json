@@ -1,0 +1,94 @@
+{
+  "name": "trae-discord-rich-presence",
+  "displayName": "TRAE Discord Rich Presence",
+  "description": "Show on Discord that you're working in TRAE instead of VS Code",
+  "version": "1.0.0",
+  "publisher": "trae",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "discord",
+    "rich presence",
+    "trae",
+    "status"
+  ],
+  "icon": "img/logo.png",
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:traeDiscordPresence.toggle"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "traeDiscordPresence.toggle",
+        "title": "TRAE Discord Presence: Toggle",
+        "category": "TRAE"
+      }
+    ],
+    "configuration": {
+      "title": "TRAE Discord Rich Presence",
+      "properties": {
+        "traeDiscordPresence.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable Discord Rich Presence for TRAE"
+        },
+        "traeDiscordPresence.showElapsedTime": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show elapsed time on the current file"
+        },
+        "traeDiscordPresence.showWorkspaceName": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show workspace name"
+        },
+        "traeDiscordPresence.mode": {
+          "type": "string",
+          "enum": ["editing", "chatting", "solo"],
+          "default": "editing",
+          "description": "Select presence mode: editing, chatting, or solo"
+        },
+        "traeDiscordPresence.chattingText": {
+          "type": "string",
+          "default": "Chatting with TRAE...",
+          "description": "Custom text shown in chatting mode"
+        },
+        "traeDiscordPresence.soloText": {
+          "type": "string",
+          "default": "SOLO Mode working...",
+          "description": "Custom text shown in solo mode"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/discord-rpc": "^4.0.10",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/vsce": "^3.7.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trae/trae-discord-rich-presence.git"
+  },
+  "license": "MIT"
+}
