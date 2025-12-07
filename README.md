@@ -3,6 +3,8 @@
 **VS Code-style Discord Rich Presence for TRAE**, showing your active projects and coding status in real-time.  
 Keep your friends and teammates updated with what you're working on! ✨
 
+[![Star the project](https://img.shields.io/badge/⭐_Star_the_Project-black?style=for-the-badge)](https://github.com/HighMark-31/TRAE-Discord-Rich-Presence/stargazers) ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HighMark-31.TRAE-Discord-Rich-Presence)
+
 ---
 
 ## 🌟 Features
